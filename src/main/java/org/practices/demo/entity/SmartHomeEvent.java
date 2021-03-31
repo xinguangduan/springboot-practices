@@ -1,4 +1,4 @@
-package com.bestpractices.cui.entity;
+package org.practices.demo.entity;
 
 import lombok.Getter;
 import lombok.Setter;

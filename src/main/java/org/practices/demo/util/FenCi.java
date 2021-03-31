@@ -1,4 +1,4 @@
-package com.bestpractices.cui.util;
+package org.practices.demo.util;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

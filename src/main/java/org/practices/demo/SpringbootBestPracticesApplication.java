@@ -1,4 +1,4 @@
-package com.bestpractices.cui;
+package org.practices.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
