@@ -11,7 +11,7 @@ public class Common {
     public static int totalSize = 10;
 
     public static String host = "127.0.0.1";
-    public static int port = 8887;
+    public static int port = 8899;
     public static int delay = 1000;
     public static int interval = 1000;
 }

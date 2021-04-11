@@ -18,10 +18,10 @@ public class WebSocketTest {
                 new Runnable() {
                     @Override
                     public void run() {
-
                         String flag = UUID.randomUUID().toString();
                         if (Common.clients.size() < Common.totalSize) {
-                            log.info("current channels: ${Common.clients.size} for $flag");
+                            log.info("current channels: {} ", Common.clients.size());
+
                         } else {
                             log.info("send msg to channels for ");
                             Common.clients.forEach(channel -> {

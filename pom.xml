@@ -8,10 +8,10 @@
         <version>2.4.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bestpractices</groupId>
-    <artifactId>springboot-bestpractices</artifactId>
+    <groupId>com.practices</groupId>
+    <artifactId>springboot-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-bestpractices</name>
+    <name>springboot-practices</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>15</java.version>
@@ -43,7 +43,12 @@
             <artifactId>undertow-websockets-jsr</artifactId>
             <version>2.2.7.Final</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/io.undertow/undertow-examples -->
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-examples</artifactId>
+            <version>2.2.7.Final</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -68,6 +73,12 @@
             <groupId>org.ansj</groupId>
             <artifactId>ansj_seg</artifactId>
             <version>5.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>11.0.2</version>
         </dependency>
     </dependencies>
     <build>
