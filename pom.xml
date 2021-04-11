@@ -74,7 +74,6 @@
             <artifactId>ansj_seg</artifactId>
             <version>5.1.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
@@ -97,5 +96,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
