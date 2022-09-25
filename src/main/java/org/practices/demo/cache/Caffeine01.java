@@ -12,6 +12,11 @@ public class Caffeine01 {
         caffeine01.test();
     }
 
+    /**
+     * weakValues 和 softValues 不可以同时使用。
+     * maximumSize 和 maximumWeight 不可以同时使用。
+     * expireAfterWrite 和 expireAfterAccess 同事存在时，以 expireAfterWrite 为准。
+     */
     public void test() {
         // 初始化缓存，设置了1分钟的写过期，100的缓存最大个数
         Cache<Integer, Integer> cache = Caffeine.newBuilder()

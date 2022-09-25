@@ -3,7 +3,15 @@ package org.practices.demo.cache;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 
+/**
+ * 软引用与弱引用
+ *
+ * 软引用：如果一个对象只具有软引用，则内存空间足够，垃圾回收器就不会回收它；如果内存空间不足了，就会回收这些对象的内存。
+ *
+ * 弱引用：弱引用的对象拥有更短暂的生命周期。在垃圾回收器线程扫描它所管辖的内存区域的过程中，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存
+ */
 public class CaffeineReferenceEviction {
+
     public void testWeak() throws InterruptedException {
         Cache<Integer, Integer> cache = Caffeine.newBuilder()
                 // 设置Key为弱引用，生命周期是下次gc的时候
