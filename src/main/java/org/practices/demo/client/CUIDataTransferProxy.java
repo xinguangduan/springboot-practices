@@ -29,10 +29,10 @@ import java.util.Map;
 import static org.synchronoss.cloud.nio.multipart.Multipart.multipart;
 
 @Slf4j
-public class CUIDataTransferProxy extends DataTransferProxy {
+public class CUIDataTransferProxy{
 
 
-    @Override
+
     protected List<DataTransferRsp> execRequest(DataTransferReq req) {
         long startTime = System.currentTimeMillis();
         List<DataTransferRsp> respList = new ArrayList<>();

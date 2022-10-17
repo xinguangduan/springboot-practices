@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import lombok.extern.slf4j.Slf4j;
-import org.openjdk.jol.info.ClassLayout;
-import org.openjdk.jol.info.GraphLayout;
+//import org.openjdk.jol.info.ClassLayout;
+//import org.openjdk.jol.info.GraphLayout;
 
 @Slf4j
 public class JVMUtils {
@@ -33,7 +33,7 @@ public class JVMUtils {
             tokenMap.put(token, tokenInfo);
         }
 
-        System.out.println(GraphLayout.parseInstance(tokenMap).totalSize());
+//        System.out.println(GraphLayout.parseInstance(tokenMap).totalSize());
 
         long endMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         System.out.println(endMemory-startMemory);
